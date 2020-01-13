@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src="/home/skillup/node_modules/jquery/dist/jquery.min.js"></script>
     <script src='main.js'></script>
 </head>
+
 <body>
-    <div class="test">
-    <h1>Hi</h1>
-    <h1>Hi2</h1>
-    <input class="title" name="email">
+    <form action="login.php" class="submit" method="POST">
+        <input type="email" name="email">
+        <input type="password" name="pass">
+        <button type="submit">Login</button>
+    </form>
 </body>
+
 </html>

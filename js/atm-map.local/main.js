@@ -1,11 +1,25 @@
-function name (a, b) {
-    return a + b;
-};
+$(document).ready(e => {
+  let form = $(".submit");
+});
 
-var myFunction = function(a ,b, callback) {
-    return a + b;
-}
+form.submit(e => {
+  e.preventDefault();
+  e.stopImmediatePropagation();
 
-console.log(myFunction(1 ,2, function() {
-    console.log("im anonymous");
-}));
+  let pass = form.find('input[type="password"]');
+  if ((pass.val(), length < 3)) {
+    alert("alert");
+  }
+
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", "http://localhost:8000/product?id=1");
+  xhr.setRequestHeader("Content-type", "application/json");
+  xhr.setRequestHeader("Cache-control", null);
+
+  xhr.onload = function() {
+    let response = xhr.response;
+    console.log(response);
+  };
+
+  xhr.send();
+});

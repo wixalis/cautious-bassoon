@@ -1,0 +1,18 @@
+<?xml version="1.0">
+<product>
+    <id>1</id>
+    <name>Qwerty</name>
+    <delivery>
+        <id delivery-item="1">2</id>
+        <name>Nova poshta</name>
+    </delivery>
+</product>
+
+{
+    id:1,
+    name:"Qwerty",
+    delivery: {
+        id: 2,
+        name: "nova poshta"
+    }
+}
